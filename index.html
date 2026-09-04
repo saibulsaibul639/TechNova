@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TECHNOVA - Repair Service</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background: #0d47a1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 17px;
+}
+
+.hero {
+    background: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    color: #0d47a1;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #25d366;
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    color: #0d47a1;
+    margin-bottom: 25px;
+}
+
+.service-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #0d47a1;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+.about {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.booking {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.booking h2 {
+    color: #0d47a1;
+    margin-bottom: 20px;
+}
+
+form {
+    background: white;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #25d366;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact {
+    background: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    background: #082b63;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🔧 TECHNOVA</h1>
+    <p>AC & Home Appliance Repair Service</p>
+</header>
+
+<section class="hero">
+    <h2>Fast, Reliable & Affordable</h2>
+    <p>Repair service at your doorstep</p>
+    <a class="btn" href="tel:7082234217">📞 Call Now</a>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+
+        <div class="card">
+            <h3>❄️ AC Repair</h3>
+            <p>AC service, repair, installation and maintenance.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧊 Refrigerator</h3>
+            <p>Refrigerator repair and cooling problem service.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧺 Washing Machine</h3>
+            <p>Washing machine repair and maintenance service.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔥 Microwave</h3>
+            <p>Microwave oven repair and service at home.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏠 Home Appliance</h3>
+            <p>Professional home appliance repair service.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚗 Home Visit</h3>
+            <p>Get reliable repair service at your doorstep.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="about">
+    <h2>About TECHNOVA</h2>
+    <p>
+        TECHNOVA provides fast and reliable AC and home appliance
+        repair services. Our goal is to provide quality service
+        at an affordable price and make your home appliance work
+        properly again.
+    </p>
+</section>
+
+<section class="booking">
+    <h2>Book a Service</h2>
+
+    <form onsubmit="sendWhatsApp(); return false;">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="tel" id="phone" placeholder="Your Phone Number" required>
+
+        <select id="service" required>
+            <option value="">Select Service</option>
+            <option>AC Repair</option>
+            <option>Refrigerator Repair</option>
+            <option>Washing Machine Repair</option>
+            <option>Microwave Repair</option>
+            <option>Home Appliance Repair</option>
+        </select>
+
+        <textarea id="problem" placeholder="Describe your problem" required></textarea>
+
+        <button type="submit">📲 Send Booking on WhatsApp</button>
+
+    </form>
+</section>
+
+<section class="contact">
+    <h2>Contact TECHNOVA</h2>
+    <p>Call us for repair service</p>
+    <br>
+    <a href="tel:7082234217">📞 7082234217</a>
+</section>
+
+<footer>
+    <p>© 2026 TECHNOVA - Repair Service. All Rights Reserved.</p>
+</footer>
+
+<script>
+function sendWhatsApp() {
+
+    var name = document.getElementById("name").value;
+    var phone = document.getElementById("phone").value;
+    var service = document.getElementById("service").value;
+    var problem = document.getElementById("problem").value;
+
+    var message =
+        "Hello TECHNOVA,%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Service: " + service + "%0A" +
+        "Problem: " + problem;
+
+    window.open(
+        "https://wa.me/917082234217?text=" + message,
+        "_blank"
+    );
+}
+</script>
+
+</body>
+</html>
