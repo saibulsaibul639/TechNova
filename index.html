@@ -1,18 +1,18 @@
-
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>TECHNOVA - AC & Home Appliance Repair</title>
-
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="TECHNOVA provides AC, refrigerator, washing machine and microwave repair services at your doorstep. Fast, reliable and affordable service.">
+<meta name="keywords" content="AC repair, refrigerator repair, washing machine repair, microwave repair, home appliance repair, Mohali, Chandigarh, Kharar, Zirakpur">
+<meta name="author" content="TECHNOVA"><title>TECHNOVA - AC & Home Appliance Repair</title><style>
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
   font-family:Arial,sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 body{
@@ -24,13 +24,14 @@ body{
 header{
   background:#0b1f3a;
   color:white;
-  padding:18px 6%;
+  padding:15px 6%;
   display:flex;
   justify-content:space-between;
   align-items:center;
   position:sticky;
   top:0;
   z-index:1000;
+  box-shadow:0 3px 12px rgba(0,0,0,0.2);
 }
 
 .logo-box{
@@ -55,6 +56,12 @@ header{
 .logo-text{
   font-size:24px;
   font-weight:bold;
+  letter-spacing:1px;
+}
+
+nav{
+  display:flex;
+  align-items:center;
 }
 
 nav a{
@@ -68,28 +75,46 @@ nav a:hover{
   color:#ffd43b;
 }
 
+.menu-btn{
+  display:none;
+  background:none;
+  border:none;
+  color:white;
+  font-size:30px;
+  cursor:pointer;
+}
+
 .hero{
   min-height:600px;
   display:flex;
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding:60px 20px;
+  padding:70px 20px;
   background:linear-gradient(135deg,#0b1f3a,#1261a0);
   color:white;
 }
 
 .hero-content{
-  max-width:800px;
+  max-width:850px;
+}
+
+.badge{
+  display:inline-block;
+  background:rgba(255,255,255,0.15);
+  padding:8px 18px;
+  border-radius:30px;
+  margin-bottom:20px;
+  font-weight:bold;
 }
 
 .hero h1{
-  font-size:55px;
+  font-size:58px;
   margin-bottom:10px;
 }
 
 .hero h2{
-  font-size:25px;
+  font-size:26px;
   margin-bottom:15px;
 }
 
@@ -126,8 +151,13 @@ nav a:hover{
   color:white;
 }
 
+.btn:hover{
+  transform:translateY(-2px);
+  opacity:0.9;
+}
+
 .section{
-  padding:60px 6%;
+  padding:65px 6%;
   text-align:center;
 }
 
@@ -165,6 +195,33 @@ nav a:hover{
   margin-bottom:10px;
 }
 
+.card p{
+  color:#555;
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.feature{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 5px 18px rgba(0,0,0,0.07);
+}
+
+.feature-icon{
+  font-size:38px;
+  margin-bottom:10px;
+}
+
+.feature h3{
+  color:#1261a0;
+  margin-bottom:8px;
+}
+
 .about{
   background:white;
 }
@@ -173,6 +230,7 @@ nav a:hover{
   max-width:800px;
   margin:auto;
   font-size:18px;
+  color:#444;
 }
 
 .areas{
@@ -228,6 +286,11 @@ input,select,textarea{
   border:1px solid #ccc;
   border-radius:8px;
   font-size:16px;
+  outline:none;
+}
+
+input:focus,select:focus,textarea:focus{
+  border-color:#1261a0;
 }
 
 textarea{
@@ -245,6 +308,35 @@ textarea{
   font-size:17px;
   font-weight:bold;
   cursor:pointer;
+}
+
+.submit:hover{
+  opacity:0.9;
+}
+
+.faq{
+  max-width:800px;
+  margin:auto;
+  text-align:left;
+}
+
+details{
+  background:white;
+  margin-bottom:12px;
+  padding:18px 20px;
+  border-radius:10px;
+  box-shadow:0 3px 12px rgba(0,0,0,0.06);
+}
+
+summary{
+  font-weight:bold;
+  cursor:pointer;
+  color:#1261a0;
+}
+
+details p{
+  margin-top:10px;
+  color:#555;
 }
 
 .contact{
@@ -266,195 +358,169 @@ footer{
   background:#061326;
   color:white;
   text-align:center;
-  padding:20px;
+  padding:25px 15px;
+}
+
+footer p{
+  margin:4px 0;
 }
 
 @media(max-width:700px){
+
   header{
+    flex-direction:row;
+    padding:12px 5%;
+  }
+
+  .logo-text{
+    font-size:20px;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  nav{
+    display:none;
+    position:absolute;
+    top:75px;
+    left:0;
+    width:100%;
+    background:#0b1f3a;
     flex-direction:column;
-    gap:12px;
+    padding:15px 0;
+  }
+
+  nav.active{
+    display:flex;
   }
 
   nav a{
-    margin:0 6px;
-    font-size:14px;
+    margin:10px 0;
+  }
+
+  .hero{
+    min-height:560px;
   }
 
   .hero h1{
-    font-size:40px;
+    font-size:42px;
   }
 
   .hero h2{
     font-size:21px;
   }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .section{
+    padding:50px 5%;
+  }
+
+  .section h2{
+    font-size:30px;
+  }
+
+  .contact-number{
+    font-size:24px;
+  }
 }
-</style>
-</head>
-
-<body>
-
-<header>
-
-<div class="logo-box">
+</style></head><body><header><div class="logo-box">
   <div class="logo">🔧</div>
   <div class="logo-text">TECHNOVA</div>
-</div>
+</div><button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-<nav>
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#about">About</a>
-  <a href="#booking">Booking</a>
-  <a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-
-<section class="hero" id="home">
-
-<div class="hero-content">
-
-<h1>TECHNOVA</h1>
-
-<h2>AC & Home Appliance Repair Service</h2>
-
-<p>
+<nav id="navbar">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#booking" onclick="closeMenu()">Booking</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</nav></header><section class="hero" id="home"><div class="hero-content"><div class="badge">🔧 Professional Home Repair Service</div><h1>TECHNOVA</h1><h2>AC & Home Appliance Repair Service</h2><p>
 Fast, Reliable & Affordable Repair Service at Your Doorstep
-</p>
-
-<div class="buttons">
-
-<a class="btn call" href="tel:7082234217">
+</p><div class="buttons"><a class="btn call" href="tel:7082234217">
 📞 Call Now
-</a>
-
-<a class="btn whatsapp"
+</a><a class="btn whatsapp"
 href="https://wa.me/917082234217?text=Hello%20TECHNOVA%2C%20I%20need%20repair%20service."
 target="_blank">
 💬 WhatsApp
 </a>
 
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section" id="services">
-
-<h2>Our Services</h2>
-
-<div class="services">
-
-<div class="card">
+</div></div></section><section class="section" id="services"><h2>Our Services</h2><div class="services"><div class="card">
 <div class="icon">❄️</div>
 <h3>AC Repair</h3>
 <p>AC service, repair, installation and maintenance.</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <div class="icon">🧊</div>
 <h3>Refrigerator Repair</h3>
 <p>Cooling problems and refrigerator repair service.</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <div class="icon">🧺</div>
 <h3>Washing Machine</h3>
 <p>Washing machine repair and maintenance.</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <div class="icon">🔥</div>
 <h3>Microwave Repair</h3>
 <p>Microwave oven repair and service.</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <div class="icon">🏠</div>
 <h3>Home Appliance</h3>
 <p>Professional appliance repair at your home.</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <div class="icon">🚗</div>
 <h3>Home Visit</h3>
 <p>Convenient doorstep repair service.</p>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section about" id="about">
-
-<h2>About TECHNOVA</h2>
-
-<p>
-TECHNOVA provides reliable AC and home appliance repair services.
-Our goal is to provide quality service, quick response and affordable
-solutions for your home appliances.
-</p>
-
-</section>
-
-
-<section class="section">
-
-<h2>Service Areas</h2>
-
-<div class="areas">
-
-<div class="area">📍 Mohali</div>
+</div></div></section><section class="section"><h2>Why Choose TECHNOVA?</h2><div class="features"><div class="feature">
+<div class="feature-icon">⚡</div>
+<h3>Quick Response</h3>
+<p>Fast response for your repair requirements.</p>
+</div><div class="feature">
+<div class="feature-icon">🛠️</div>
+<h3>Professional Service</h3>
+<p>Reliable repair service for home appliances.</p>
+</div><div class="feature">
+<div class="feature-icon">💰</div>
+<h3>Affordable Price</h3>
+<p>Quality service with reasonable pricing.</p>
+</div><div class="feature">
+<div class="feature-icon">🏠</div>
+<h3>Doorstep Service</h3>
+<p>Convenient service at your home.</p>
+</div></div></section><section class="section about" id="about"><h2>About TECHNOVA</h2><p>
+TECHNOVA provides AC and home appliance repair services.
+Our goal is to provide quality service, quick response and
+affordable solutions for your home appliances.
+</p></section><section class="section"><h2>Service Areas</h2><div class="areas"><div class="area">📍 Mohali</div>
 <div class="area">📍 Chandigarh</div>
 <div class="area">📍 Kharar</div>
 <div class="area">📍 Zirakpur</div>
-<div class="area">📍 Nearby Areas</div>
-
-</div>
-
-</section>
-
-
-<section class="section">
-
-<h2>Customer Reviews</h2>
-
-<div class="reviews">
-
-<div class="review">
+<div class="area">📍 Nearby Areas</div></div></section><section class="section"><h2>Customer Reviews</h2><div class="reviews"><div class="review">
 <div class="stars">★★★★★</div>
 <p>"Fast service and good response."</p>
 <strong>Happy Customer</strong>
-</div>
-
-<div class="review">
+</div><div class="review">
 <div class="stars">★★★★★</div>
 <p>"Professional appliance repair service."</p>
 <strong>Happy Customer</strong>
-</div>
-
-<div class="review">
+</div><div class="review">
 <div class="stars">★★★★★</div>
 <p>"Quick doorstep service."</p>
 <strong>Happy Customer</strong>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="section booking" id="booking">
-
-<h2>Book a Service</h2>
-
-<form onsubmit="sendWhatsApp(); return false;">
-
-<input
+</div></div></section><section class="section"><h2>Frequently Asked Questions</h2><div class="faq"><details>
+<summary>Which appliances do you repair?</summary>
+<p>We provide AC, refrigerator, washing machine, microwave and other home appliance repair services.</p>
+</details><details>
+<summary>Do you provide home service?</summary>
+<p>Yes, TECHNOVA provides convenient doorstep repair service.</p>
+</details><details>
+<summary>How can I book a service?</summary>
+<p>You can fill the booking form below and send your request directly on WhatsApp.</p>
+</details><details>
+<summary>How can I contact TECHNOVA?</summary>
+<p>You can call or WhatsApp TECHNOVA directly using the buttons on this website.</p>
+</details></div></section><section class="section booking" id="booking"><h2>Book a Service</h2><form onsubmit="sendWhatsApp(); return false;"><input
 type="text"
 id="name"
 placeholder="Your Name"
@@ -473,58 +539,31 @@ required>
 <option>Washing Machine Repair</option>
 <option>Microwave Repair</option>
 <option>Home Appliance Repair</option>
-</select>
-
-<textarea
+</select><textarea
 id="problem"
 placeholder="Describe your problem"
-required></textarea>
-
-<button class="submit" type="submit">
+required></textarea><button class="submit" type="submit">
 📲 Send Booking on WhatsApp
-</button>
-
-</form>
-
-</section>
-
-
-<section class="section contact" id="contact">
-
-<h2>Contact TECHNOVA</h2>
-
-<p>Call or WhatsApp us for repair service</p>
-
-<div class="contact-number">
+</button></form></section><section class="section contact" id="contact"><h2>Contact TECHNOVA</h2><p>Call or WhatsApp us for repair service</p><div class="contact-number">
 📞 7082234217
-</div>
-
-<div class="buttons">
-
-<a class="btn call" href="tel:7082234217">
-Call Now
-</a>
-
-<a class="btn whatsapp"
+</div><div class="buttons"><a class="btn call" href="tel:7082234217">
+📞 Call Now
+</a><a class="btn whatsapp"
 href="https://wa.me/917082234217?text=Hello%20TECHNOVA%2C%20I%20need%20repair%20service."
 target="_blank">
-WhatsApp
+💬 WhatsApp
 </a>
 
-</div>
+</div></section><footer><p>© 2026 TECHNOVA - Repair Service</p>
+<p>Fast • Reliable • Affordable</p></footer><script>
 
-</section>
+function toggleMenu(){
+  document.getElementById("navbar").classList.toggle("active");
+}
 
-
-<footer>
-
-<p>© 2026 TECHNOVA - Repair Service</p>
-<p>Fast • Reliable • Affordable</p>
-
-</footer>
-
-
-<script>
+function closeMenu(){
+  document.getElementById("navbar").classList.remove("active");
+}
 
 function sendWhatsApp(){
 
@@ -535,10 +574,10 @@ function sendWhatsApp(){
 
   let message =
   "Hello TECHNOVA,%0A%0A" +
-  "Name: " + name + "%0A" +
-  "Phone: " + phone + "%0A" +
-  "Service: " + service + "%0A" +
-  "Problem: " + problem;
+  "Name: " + encodeURIComponent(name) + "%0A" +
+  "Phone: " + encodeURIComponent(phone) + "%0A" +
+  "Service: " + encodeURIComponent(service) + "%0A" +
+  "Problem: " + encodeURIComponent(problem);
 
   window.open(
     "https://wa.me/917082234217?text=" + message,
@@ -546,7 +585,5 @@ function sendWhatsApp(){
   );
 }
 
-</script>
-
-</body>
+</script></body>
 </html>
