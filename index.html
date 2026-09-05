@@ -1,30 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>TECHNOVA | AC, Refrigerator & Home Appliance Repair</title>
+  <meta name="google-site-verification" content="zWZG9VFxffzsqlk0MATK2GwC3HYBUczictr9rnh4bsk" />
 
-  <meta name="description"
-    content="TECHNOVA provides fast, reliable and affordable AC, refrigerator, washing machine, microwave and home appliance repair service at your doorstep.">
+  <title>TECHNOVA - AC & Home Appliance Repair Service</title>
 
-  <meta name="keywords"
-    content="TECHNOVA, AC repair, AC service, refrigerator repair, fridge repair, washing machine repair, microwave repair, home appliance repair">
+  <meta name="description" content="TECHNOVA provides AC, refrigerator, washing machine, microwave and home appliance repair services. Book a professional home service easily.">
+
+  <meta name="keywords" content="AC repair, refrigerator repair, washing machine repair, microwave repair, home appliance repair, TECHNOVA">
 
   <meta name="author" content="TECHNOVA">
 
-  <meta name="robots" content="index, follow">
-
-  <meta name="google-site-verification"
-    content="zWZG9VFxffzsqlk0MATK2GwC3HYBUczictr9rnh4bsk">
-
-  <meta name="theme-color" content="#0757c9">
+  <meta name="theme-color" content="#2563eb">
 
   <style>
-
     * {
       margin: 0;
       padding: 0;
@@ -34,336 +27,457 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f4f7fb;
-      color: #20242a;
+      background: #f5f7fb;
+      color: #172033;
       line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
     }
 
     /* HEADER */
 
     header {
-      background: linear-gradient(135deg, #0d6efd, #06357a);
-      color: white;
-      text-align: center;
-      padding: 38px 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: white;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      min-height: 72px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
     }
 
     .logo {
-      display: inline-block;
-      font-size: 44px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 25px;
       font-weight: 900;
-      letter-spacing: 1px;
+      color: #2563eb;
     }
 
     .logo-icon {
-      display: inline-flex;
-      width: 58px;
-      height: 58px;
-      align-items: center;
-      justify-content: center;
-      background: white;
-      color: #0d6efd;
-      border-radius: 50%;
-      margin-right: 8px;
-      font-size: 30px;
-      vertical-align: middle;
+      width: 43px;
+      height: 43px;
+      border-radius: 12px;
+      background: #2563eb;
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 23px;
     }
-
-    header p {
-      font-size: 18px;
-      margin-top: 7px;
-    }
-
-    /* NAV */
 
     nav {
-      background: #052d67;
-      padding: 14px 8px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      box-shadow: 0 3px 12px rgba(0,0,0,.18);
+      display: flex;
+      gap: 25px;
+      align-items: center;
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 10px;
-      font-size: 15px;
+      font-weight: 600;
+      color: #333;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #2563eb;
+    }
+
+    .nav-button {
+      background: #2563eb;
+      color: white !important;
+      padding: 10px 17px;
+      border-radius: 9px;
     }
 
     /* HERO */
 
     .hero {
-      background: white;
-      text-align: center;
-      padding: 80px 20px;
+      background: linear-gradient(135deg, #eff6ff, #ffffff);
+      padding: 75px 20px;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #dbeafe;
+      color: #1d4ed8;
+      padding: 7px 14px;
+      border-radius: 30px;
+      font-weight: bold;
+      margin-bottom: 18px;
     }
 
     .hero h1 {
-      font-size: 40px;
-      color: #0757c9;
-      margin-bottom: 15px;
+      font-size: 52px;
+      line-height: 1.1;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 span {
+      color: #2563eb;
     }
 
     .hero p {
-      max-width: 800px;
-      margin: auto;
       font-size: 19px;
-      color: #444;
+      color: #5b6475;
+      margin-bottom: 28px;
     }
 
-    .buttons {
-      margin-top: 28px;
+    .hero-buttons {
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-block;
-      padding: 14px 25px;
-      margin: 6px;
-      border-radius: 9px;
-      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 10px;
       font-weight: bold;
-      color: white;
-      font-size: 16px;
       border: none;
       cursor: pointer;
+      font-size: 16px;
     }
 
-    .call {
-      background: #0d6efd;
+    .primary {
+      background: #2563eb;
+      color: white;
     }
 
-    .call:hover {
-      background: #084298;
+    .secondary {
+      background: white;
+      color: #2563eb;
+      border: 2px solid #2563eb;
     }
 
-    .whatsapp {
-      background: #20b957;
+    .hero-card {
+      background: white;
+      padding: 30px;
+      border-radius: 22px;
+      box-shadow: 0 15px 40px rgba(37,99,235,0.15);
     }
 
-    .whatsapp:hover {
-      background: #128c4a;
+    .hero-card-icon {
+      font-size: 70px;
+      text-align: center;
+      margin-bottom: 15px;
     }
 
-    /* GENERAL */
+    .hero-card h3 {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .hero-card p {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 18px;
+    }
+
+    .trust {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+
+    .trust div {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .trust span {
+      display: block;
+      color: #2563eb;
+      font-size: 20px;
+    }
+
+    /* SEARCH */
+
+    .search-box {
+      max-width: 850px;
+      margin: -30px auto 0;
+      position: relative;
+      z-index: 5;
+      padding: 0 20px;
+    }
+
+    .search-inner {
+      background: white;
+      padding: 14px;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      display: flex;
+      gap: 10px;
+    }
+
+    .search-inner input {
+      flex: 1;
+      border: none;
+      outline: none;
+      padding: 12px;
+      font-size: 16px;
+    }
+
+    /* COMMON */
 
     section {
-      max-width: 1150px;
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
       margin: auto;
-      padding: 65px 20px;
     }
 
     .section-title {
       text-align: center;
-      color: #0757c9;
-      font-size: 32px;
-      margin-bottom: 35px;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: #687386;
     }
 
     /* SERVICES */
 
-    .services {
+    .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 22px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
     }
 
-    .card {
+    .service-card {
       background: white;
-      padding: 30px 22px;
+      padding: 25px 20px;
+      border-radius: 16px;
       text-align: center;
-      border-radius: 15px;
-      box-shadow: 0 4px 16px rgba(0,0,0,.08);
-      transition: .3s;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+      transition: 0.25s;
     }
 
-    .card:hover {
+    .service-card:hover {
       transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.1);
     }
 
-    .icon {
-      font-size: 45px;
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      margin: auto auto 15px;
+      border-radius: 50%;
+      background: #eff6ff;
+      display: grid;
+      place-items: center;
+      font-size: 35px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 7px;
+    }
+
+    .service-card p {
+      color: #6b7280;
+      font-size: 14px;
       margin-bottom: 10px;
     }
 
-    .card h3 {
-      color: #0757c9;
-      margin-bottom: 9px;
-      font-size: 21px;
+    .price {
+      font-weight: bold;
+      color: #2563eb;
+      margin-bottom: 15px;
     }
 
-    .card p {
-      color: #555;
+    .small-btn {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 9px 15px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    /* OFFER */
+
+    .offer {
+      background: #172033;
+      color: white;
+    }
+
+    .offer-box {
+      max-width: 1000px;
+      margin: auto;
+      padding: 35px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .offer-box h2 {
+      font-size: 32px;
+    }
+
+    .offer-box p {
+      margin-top: 5px;
+    }
+
+    .offer-code {
+      background: white;
+      color: #1d4ed8;
+      padding: 12px 18px;
+      border-radius: 9px;
+      font-weight: bold;
+      white-space: nowrap;
     }
 
     /* WHY US */
 
-    .why-us {
-      background: white;
-      border-radius: 15px;
-    }
-
     .why-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 18px;
-    }
-
-    .why-card {
-      background: #edf5ff;
-      padding: 22px;
-      text-align: center;
-      border-radius: 12px;
-      font-weight: bold;
-    }
-
-    .why-card div {
-      font-size: 35px;
-      margin-bottom: 8px;
-    }
-
-    /* ABOUT */
-
-    .about-box {
-      background: white;
-      padding: 35px;
-      border-radius: 15px;
-      text-align: center;
-      box-shadow: 0 4px 16px rgba(0,0,0,.06);
-    }
-
-    .about-box p {
-      max-width: 850px;
-      margin: auto;
-      font-size: 18px;
-      color: #444;
-    }
-
-    /* SERVICE AREA */
-
-    .area {
-      background: #eaf3ff;
-      border-radius: 15px;
-      text-align: center;
-    }
-
-    .area p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .areas {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .area-tag {
-      background: white;
-      padding: 12px 18px;
-      border-radius: 25px;
-      font-weight: bold;
-      box-shadow: 0 2px 8px rgba(0,0,0,.08);
-    }
-
-    /* REVIEWS */
-
-    .reviews {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
 
-    .review {
+    .why-card {
       background: white;
       padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 4px 15px rgba(0,0,0,.08);
+      border-radius: 15px;
       text-align: center;
     }
 
-    .stars {
-      font-size: 22px;
+    .why-card div {
+      font-size: 40px;
       margin-bottom: 10px;
-    }
-
-    .review p {
-      color: #555;
-      font-style: italic;
-    }
-
-    .review strong {
-      display: block;
-      margin-top: 15px;
     }
 
     /* BOOKING */
 
-    .booking-section {
-      background: #edf5ff;
-      border-radius: 15px;
+    .booking {
+      background: #eef5ff;
     }
 
-    .booking-intro {
-      text-align: center;
-      color: #555;
-      margin-bottom: 25px;
-    }
-
-    form {
-      max-width: 650px;
+    .booking-box {
+      max-width: 850px;
       margin: auto;
       background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 16px rgba(0,0,0,.08);
+      padding: 35px;
+      border-radius: 20px;
+      box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 17px;
+    }
+
+    .form-group {
+      margin-bottom: 5px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 6px;
     }
 
     input,
     select,
     textarea {
       width: 100%;
-      padding: 14px;
-      margin-bottom: 15px;
-      border: 1px solid #ccd5e0;
-      border-radius: 8px;
-      font-size: 16px;
+      padding: 13px;
+      border: 1px solid #d5dbe5;
+      border-radius: 9px;
       outline: none;
+      font-size: 15px;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
     }
 
     input:focus,
     select:focus,
     textarea:focus {
-      border-color: #0d6efd;
-    }
-
-    textarea {
-      min-height: 120px;
-      resize: vertical;
+      border-color: #2563eb;
     }
 
     .submit {
       width: 100%;
-      padding: 15px;
-      background: #20b957;
+      margin-top: 20px;
+      background: #16a34a;
       color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 17px;
-      font-weight: bold;
-      cursor: pointer;
     }
 
-    .submit:hover {
-      background: #128c4a;
+    /* REVIEWS */
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .review {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    }
+
+    .stars {
+      color: #f59e0b;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .review p {
+      color: #596273;
+      margin-bottom: 15px;
+    }
+
+    .review strong {
+      display: block;
     }
 
     /* FAQ */
@@ -376,813 +490,886 @@
     details {
       background: white;
       margin-bottom: 12px;
-      padding: 18px 20px;
       border-radius: 10px;
-      box-shadow: 0 3px 12px rgba(0,0,0,.06);
+      padding: 18px 20px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.05);
     }
 
     summary {
       cursor: pointer;
       font-weight: bold;
-      color: #0757c9;
     }
 
     details p {
-      margin-top: 12px;
-      color: #555;
+      margin-top: 10px;
+      color: #626b7a;
     }
 
     /* CONTACT */
 
-    .contact {
-      background: #eaf3ff;
-      text-align: center;
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: white;
+      padding: 30px;
       border-radius: 15px;
-      padding: 45px 20px;
+      text-align: center;
     }
 
-    .phone {
-      font-size: 29px;
+    .contact-card div {
+      font-size: 35px;
+      margin-bottom: 10px;
+    }
+
+    .contact-card a {
+      color: #2563eb;
       font-weight: bold;
-      margin: 15px 0;
-    }
-
-    .phone a {
-      color: #0757c9;
-      text-decoration: none;
     }
 
     /* FOOTER */
 
     footer {
-      background: #052d67;
+      background: #111827;
       color: white;
-      text-align: center;
-      padding: 30px 15px;
+      padding: 45px 20px 25px;
     }
 
-    footer p {
-      margin: 5px;
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+      color: #c4cad5;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    .copyright {
+      max-width: 1200px;
+      margin: 30px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #374151;
+      text-align: center;
+      color: #9ca3af;
     }
 
     /* FLOATING BUTTONS */
 
     .floating {
       position: fixed;
-      right: 17px;
+      right: 18px;
       bottom: 18px;
-      z-index: 2000;
+      z-index: 999;
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
 
-    .floating a {
-      width: 54px;
-      height: 54px;
+    .float-btn {
+      width: 52px;
+      height: 52px;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      display: grid;
+      place-items: center;
       color: white;
-      text-decoration: none;
       font-size: 24px;
-      box-shadow: 0 4px 12px rgba(0,0,0,.25);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
-    .floating-call {
-      background: #0d6efd;
+    .call {
+      background: #2563eb;
     }
 
-    .floating-whatsapp {
-      background: #20b957;
+    .whatsapp {
+      background: #16a34a;
     }
 
     /* MOBILE */
 
-    @media (max-width: 600px) {
-
-      .logo {
-        font-size: 34px;
+    @media (max-width: 900px) {
+      .hero-container {
+        grid-template-columns: 1fr;
       }
 
-      .logo-icon {
-        width: 48px;
-        height: 48px;
-        font-size: 24px;
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      header p {
-        font-size: 16px;
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
       nav {
-        padding: 12px 3px;
-      }
-
-      nav a {
-        margin: 0 4px;
-        font-size: 12px;
+        display: none;
       }
 
       .hero {
-        padding: 60px 18px;
+        padding: 55px 18px;
       }
 
       .hero h1 {
-        font-size: 29px;
+        font-size: 38px;
       }
 
       .hero p {
-        font-size: 17px;
+        font-size: 16px;
       }
 
       section {
         padding: 50px 15px;
       }
 
-      .section-title {
-        font-size: 27px;
+      .section-title h2 {
+        font-size: 29px;
       }
 
-      .about-box {
-        padding: 25px 18px;
+      .services-grid,
+      .why-grid,
+      .reviews,
+      .contact-grid {
+        grid-template-columns: 1fr;
       }
 
-      form {
-        padding: 22px;
+      .form-grid {
+        grid-template-columns: 1fr;
       }
 
-      .phone {
-        font-size: 23px;
+      .form-group.full {
+        grid-column: auto;
       }
 
+      .offer-box {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .search-inner {
+        padding: 8px;
+      }
     }
-
   </style>
-
 </head>
-
 
 <body>
 
+  <!-- HEADER -->
 
-<!-- HEADER -->
+  <header>
+    <div class="nav">
 
-<header>
+      <a href="#home" class="logo">
+        <span class="logo-icon">🔧</span>
+        TECHNOVA
+      </a>
 
-  <div class="logo">
-    <span class="logo-icon">🔧</span>
-    TECHNOVA
-  </div>
-
-  <p>
-    AC & Home Appliance Repair Service
-  </p>
-
-</header>
-
-
-<!-- NAVIGATION -->
-
-<nav>
-
-  <a href="#home">Home</a>
-  <a href="#services">Services</a>
-  <a href="#about">About</a>
-  <a href="#areas">Areas</a>
-  <a href="#booking">Booking</a>
-  <a href="#faq">FAQ</a>
-  <a href="#contact">Contact</a>
-
-</nav>
-
-
-<!-- HERO -->
-
-<div class="hero" id="home">
-
-  <h1>
-    Fast, Reliable & Affordable Repair Service
-  </h1>
-
-  <p>
-    Professional AC and home appliance repair service
-    at your doorstep. Get reliable service for AC,
-    refrigerator, washing machine, microwave and
-    other home appliances.
-  </p>
-
-  <div class="buttons">
-
-    <a
-      class="btn call"
-      href="tel:7082234217">
-      📞 Call Now
-    </a>
-
-    <a
-      class="btn whatsapp"
-      href="https://wa.me/917082234217?text=Hello%20TECHNOVA%2C%20I%20need%20repair%20service."
-      target="_blank">
-      💬 WhatsApp
-    </a>
-
-  </div>
-
-</div>
-
-
-<!-- SERVICES -->
-
-<section id="services">
-
-  <h2 class="section-title">
-    Our Services
-  </h2>
-
-  <div class="services">
-
-
-    <div class="card">
-
-      <div class="icon">❄️</div>
-
-      <h3>AC Repair</h3>
-
-      <p>
-        AC service, repair, installation and maintenance
-        for better performance.
-      </p>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#offers">Offers</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking" class="nav-button">Book Service</a>
+      </nav>
 
     </div>
+  </header>
 
 
-    <div class="card">
+  <!-- HERO -->
 
-      <div class="icon">🧊</div>
+  <section class="hero" id="home">
 
-      <h3>Refrigerator Repair</h3>
+    <div class="hero-container">
 
-      <p>
-        Refrigerator cooling problems and general
-        repair service.
-      </p>
+      <div>
 
-    </div>
+        <span class="badge">🏠 Home Service</span>
 
+        <h1>
+          Reliable Repair Service
+          <span>At Your Doorstep</span>
+        </h1>
 
-    <div class="card">
+        <p>
+          AC, Refrigerator, Washing Machine, Microwave and Home Appliance
+          repair service made simple with TECHNOVA.
+        </p>
 
-      <div class="icon">🧺</div>
+        <div class="hero-buttons">
 
-      <h3>Washing Machine Repair</h3>
+          <a href="#booking" class="btn primary">
+            📅 Book a Service
+          </a>
 
-      <p>
-        Repair and maintenance for washing machines
-        and common problems.
-      </p>
+          <a href="tel:7082234217" class="btn secondary">
+            ☎️ Call Now
+          </a>
 
-    </div>
-
-
-    <div class="card">
-
-      <div class="icon">🍽️</div>
-
-      <h3>Microwave Repair</h3>
-
-      <p>
-        Microwave troubleshooting and repair service
-        for home appliances.
-      </p>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="icon">🔧</div>
-
-      <h3>Home Appliance Repair</h3>
-
-      <p>
-        Professional repair support for different
-        household appliances.
-      </p>
-
-    </div>
-
-
-    <div class="card">
-
-      <div class="icon">🏠</div>
-
-      <h3>Home Visit</h3>
-
-      <p>
-        Convenient doorstep service for your
-        appliance repair needs.
-      </p>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-<!-- WHY CHOOSE US -->
-
-<section>
-
-  <div class="why-us">
-
-    <h2 class="section-title">
-      Why Choose TECHNOVA?
-    </h2>
-
-    <div class="why-grid">
-
-      <div class="why-card">
-
-        <div>⚡</div>
-
-        Fast Service
+        </div>
 
       </div>
 
 
-      <div class="why-card">
+      <div class="hero-card">
 
-        <div>🛠️</div>
+        <div class="hero-card-icon">🧑‍🔧</div>
 
-        Professional Repair
+        <h3>Professional Home Service</h3>
 
-      </div>
+        <p>
+          Convenient appliance repair service with easy booking and
+          direct WhatsApp support.
+        </p>
 
+        <a href="#booking" class="btn primary" style="width:100%; text-align:center;">
+          Get Started
+        </a>
 
-      <div class="why-card">
+        <div class="trust">
+          <div>
+            <span>⭐</span>
+            Trusted
+          </div>
 
-        <div>💰</div>
+          <div>
+            <span>⚡</span>
+            Fast
+          </div>
 
-        Affordable Service
-
-      </div>
-
-
-      <div class="why-card">
-
-        <div>🏠</div>
-
-        Doorstep Service
+          <div>
+            <span>🛠️</span>
+            Skilled
+          </div>
+        </div>
 
       </div>
 
     </div>
 
-  </div>
-
-</section>
+  </section>
 
 
-<!-- ABOUT -->
+  <!-- SEARCH -->
 
-<section id="about">
+  <div class="search-box">
 
-  <div class="about-box">
-
-    <h2 class="section-title">
-      About TECHNOVA
-    </h2>
-
-    <p>
-      TECHNOVA is a home appliance repair service
-      focused on providing reliable, convenient and
-      affordable doorstep repair solutions. We provide
-      service for AC, refrigerator, washing machine,
-      microwave and other home appliances.
-    </p>
-
-  </div>
-
-</section>
-
-
-<!-- SERVICE AREAS -->
-
-<section id="areas">
-
-  <div class="area">
-
-    <h2 class="section-title">
-      Service Areas
-    </h2>
-
-    <p>
-      Contact TECHNOVA to check service availability
-      in your area.
-    </p>
-
-    <div class="areas">
-
-      <span class="area-tag">
-        Mohali
-      </span>
-
-      <span class="area-tag">
-        Chandigarh
-      </span>
-
-      <span class="area-tag">
-        Zirakpur
-      </span>
-
-      <span class="area-tag">
-        Kharar
-      </span>
-
-      <span class="area-tag">
-        Nearby Areas
-      </span>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- REVIEWS -->
-
-<section>
-
-  <h2 class="section-title">
-    Customer Reviews
-  </h2>
-
-  <div class="reviews">
-
-
-    <div class="review">
-
-      <div class="stars">
-        ⭐⭐⭐⭐⭐
-      </div>
-
-      <p>
-        "Good service and quick response."
-      </p>
-
-      <strong>
-        — Customer
-      </strong>
-
-    </div>
-
-
-    <div class="review">
-
-      <div class="stars">
-        ⭐⭐⭐⭐⭐
-      </div>
-
-      <p>
-        "Professional and convenient doorstep service."
-      </p>
-
-      <strong>
-        — Customer
-      </strong>
-
-    </div>
-
-
-    <div class="review">
-
-      <div class="stars">
-        ⭐⭐⭐⭐⭐
-      </div>
-
-      <p>
-        "Satisfied with the repair service."
-      </p>
-
-      <strong>
-        — Customer
-      </strong>
-
-    </div>
-
-
-  </div>
-
-</section>
-
-
-<!-- BOOKING -->
-
-<section id="booking">
-
-  <div class="booking-section">
-
-    <h2 class="section-title">
-      Book a Repair Service
-    </h2>
-
-    <p class="booking-intro">
-      Fill in your details and send your request
-      directly to TECHNOVA on WhatsApp.
-    </p>
-
-
-    <form id="bookingForm">
-
+    <div class="search-inner">
 
       <input
         type="text"
-        id="name"
-        placeholder="Your Name"
-        required>
+        id="serviceSearch"
+        placeholder="🔎 Search for a service..."
+        onkeyup="searchServices()"
+      >
 
-
-      <input
-        type="tel"
-        id="phone"
-        placeholder="Your Phone Number"
-        required>
-
-
-      <select id="service" required>
-
-        <option value="">
-          Select Service
-        </option>
-
-        <option value="AC Repair">
-          AC Repair
-        </option>
-
-        <option value="Refrigerator Repair">
-          Refrigerator Repair
-        </option>
-
-        <option value="Washing Machine Repair">
-          Washing Machine Repair
-        </option>
-
-        <option value="Microwave Repair">
-          Microwave Repair
-        </option>
-
-        <option value="Home Appliance Repair">
-          Home Appliance Repair
-        </option>
-
-        <option value="Home Visit">
-          Home Visit
-        </option>
-
-      </select>
-
-
-      <textarea
-        id="problem"
-        placeholder="Describe your appliance problem"
-        required></textarea>
-
-
-      <button
-        type="submit"
-        class="submit">
-        💬 Send Booking on WhatsApp
-      </button>
-
-
-    </form>
-
-  </div>
-
-</section>
-
-
-<!-- FAQ -->
-
-<section id="faq">
-
-  <h2 class="section-title">
-    Frequently Asked Questions
-  </h2>
-
-  <div class="faq">
-
-
-    <details>
-
-      <summary>
-        Which appliances do you repair?
-      </summary>
-
-      <p>
-        TECHNOVA provides repair service for AC,
-        refrigerator, washing machine, microwave
-        and other home appliances.
-      </p>
-
-    </details>
-
-
-    <details>
-
-      <summary>
-        Do you provide home visit service?
-      </summary>
-
-      <p>
-        Yes. Contact TECHNOVA to check doorstep
-        service availability in your area.
-      </p>
-
-    </details>
-
-
-    <details>
-
-      <summary>
-        How can I book a service?
-      </summary>
-
-      <p>
-        You can call TECHNOVA or use the WhatsApp
-        booking form on this website.
-      </p>
-
-    </details>
-
-
-    <details>
-
-      <summary>
-        How can I contact TECHNOVA?
-      </summary>
-
-      <p>
-        Call 7082234217 or send a WhatsApp message
-        using the buttons on this website.
-      </p>
-
-    </details>
-
-
-  </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-  <div class="contact">
-
-    <h2 class="section-title">
-      Contact TECHNOVA
-    </h2>
-
-    <p>
-      Need appliance repair service?
-      Contact us today.
-    </p>
-
-
-    <div class="phone">
-
-      <a href="tel:7082234217">
-        📞 7082234217
-      </a>
-
-    </div>
-
-
-    <div class="buttons">
-
-      <a
-        class="btn call"
-        href="tel:7082234217">
-        📞 Call Now
-      </a>
-
-
-      <a
-        class="btn whatsapp"
-        href="https://wa.me/917082234217?text=Hello%20TECHNOVA%2C%20I%20need%20repair%20service."
-        target="_blank">
-        💬 WhatsApp
+      <a href="#booking" class="btn primary">
+        Search
       </a>
 
     </div>
 
   </div>
 
-</section>
+
+  <!-- SERVICES -->
+
+  <section id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Our Services</h2>
+        <p>Choose the service you need</p>
+      </div>
 
 
-<!-- FOOTER -->
+      <div class="services-grid" id="serviceGrid">
 
-<footer>
-
-  <p>
-    © 2026 TECHNOVA - AC & Home Appliance Repair Service
-  </p>
-
-  <p>
-    Fast • Reliable • Affordable
-  </p>
-
-</footer>
+        <div class="service-card">
+          <div class="service-icon">❄️</div>
+          <h3>AC Repair</h3>
+          <p>AC service, repair and maintenance.</p>
+          <div class="price">Get Quote</div>
+          <a href="#booking" class="small-btn">Book Now</a>
+        </div>
 
 
-<!-- FLOATING BUTTONS -->
-
-<div class="floating">
-
-  <a
-    class="floating-call"
-    href="tel:7082234217"
-    aria-label="Call TECHNOVA">
-    📞
-  </a>
+        <div class="service-card">
+          <div class="service-icon">🧊</div>
+          <h3>Refrigerator</h3>
+          <p>Fridge repair and cooling problems.</p>
+          <div class="price">Get Quote</div>
+          <a href="#booking" class="small-btn">Book Now</a>
+        </div>
 
 
-  <a
-    class="floating-whatsapp"
-    href="https://wa.me/917082234217?text=Hello%20TECHNOVA%2C%20I%20need%20repair%20service."
-    target="_blank"
-    aria-label="WhatsApp TECHNOVA">
-    💬
-  </a>
-
-</div>
+        <div class="service-card">
+          <div class="service-icon">🧺</div>
+          <h3>Washing Machine</h3>
+          <p>Washing machine repair service.</p>
+          <div class="price">Get Quote</div>
+          <a href="#booking" class="small-btn">Book Now</a>
+        </div>
 
 
-<!-- WHATSAPP BOOKING -->
+        <div class="service-card">
+          <div class="service-icon">🍽️</div>
+          <h3>Microwave</h3>
+          <p>Microwave repair and troubleshooting.</p>
+          <div class="price">Get Quote</div>
+          <a href="#booking" class="small-btn">Book Now</a>
+        </div>
 
-<script>
 
-  document
-    .getElementById("bookingForm")
-    .addEventListener("submit", function(event) {
+        <div class="service-card">
+          <div class="service-icon">📺</div>
+          <h3>TV Repair</h3>
+          <p>TV inspection and repair service.</p>
+          <div class="price">Get Quote</div>
+          <a href="#booking" class="small-btn">Book Now</a>
+        </div>
+
+
+        <div class="service-card">
+          <div class="service-icon">💧</div>
+          <h3>Water Purifier</h3>
+          <p>RO and water purifier service.</p>
+          <div class="price">Get Quote</div>
+          <a href="#booking" class="small-btn">Book Now</a>
+        </div>
+
+
+        <div class="service-card">
+          <div class="service-icon">⚡</div>
+          <h3>Electrical Service</h3>
+          <p>General electrical home service.</p>
+          <div class="price">Get Quote</div>
+          <a href="#booking" class="small-btn">Book Now</a>
+        </div>
+
+
+        <div class="service-card">
+          <div class="service-icon">🚰</div>
+          <h3>Plumbing</h3>
+          <p>General plumbing service.</p>
+          <div class="price">Get Quote</div>
+          <a href="#booking" class="small-btn">Book Now</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- OFFER -->
+
+  <section class="offer" id="offers">
+
+    <div class="offer-box">
+
+      <div>
+        <h2>🎁 Special Service Offer</h2>
+        <p>Book your home appliance service through TECHNOVA.</p>
+      </div>
+
+      <div class="offer-code">
+        TECHNOVA
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- WHY TECHNOVA -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Why Choose TECHNOVA?</h2>
+        <p>Simple, convenient and professional service</p>
+      </div>
+
+
+      <div class="why-grid">
+
+        <div class="why-card">
+          <div>🧑‍🔧</div>
+          <h3>Professional Service</h3>
+          <p>Service-focused approach for your appliance problems.</p>
+        </div>
+
+        <div class="why-card">
+          <div>⚡</div>
+          <h3>Quick Response</h3>
+          <p>Easy booking and direct contact.</p>
+        </div>
+
+        <div class="why-card">
+          <div>💰</div>
+          <h3>Easy Quotation</h3>
+          <p>Get service details before work begins.</p>
+        </div>
+
+        <div class="why-card">
+          <div>📱</div>
+          <h3>Easy Booking</h3>
+          <p>Book directly through WhatsApp.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- BOOKING -->
+
+  <section class="booking" id="booking">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Book a Service</h2>
+        <p>Fill the form and send your request on WhatsApp</p>
+      </div>
+
+
+      <div class="booking-box">
+
+        <form onsubmit="sendBooking(event)">
+
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label>Your Name</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              >
+            </div>
+
+
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter phone number"
+                required
+              >
+            </div>
+
+
+            <div class="form-group">
+              <label>Select Service</label>
+
+              <select id="service" required>
+
+                <option value="">Choose a service</option>
+
+                <option>AC Repair</option>
+                <option>Refrigerator Repair</option>
+                <option>Washing Machine Repair</option>
+                <option>Microwave Repair</option>
+                <option>TV Repair</option>
+                <option>Water Purifier Service</option>
+                <option>Electrical Service</option>
+                <option>Plumbing Service</option>
+                <option>Home Appliance Repair</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group">
+              <label>Preferred Time</label>
+
+              <select id="time" required>
+
+                <option value="">Choose time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+
+              </select>
+
+            </div>
+
+
+            <div class="form-group full">
+
+              <label>Problem / Requirement</label>
+
+              <textarea
+                id="problem"
+                placeholder="Tell us about your appliance problem..."
+                required
+              ></textarea>
+
+            </div>
+
+          </div>
+
+
+          <button class="btn submit" type="submit">
+            📲 Send Booking on WhatsApp
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- REVIEWS -->
+
+  <section id="reviews">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Customer Feedback</h2>
+        <p>What customers can expect from our service</p>
+      </div>
+
+
+      <div class="reviews">
+
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>
+            Professional communication and convenient booking experience.
+          </p>
+          <strong>TECHNOVA Customer</strong>
+        </div>
+
+
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>
+            Easy to contact and simple home-service booking process.
+          </p>
+          <strong>TECHNOVA Customer</strong>
+        </div>
+
+
+        <div class="review">
+          <div class="stars">★★★★★</div>
+          <p>
+            A convenient option for home appliance service requests.
+          </p>
+          <strong>TECHNOVA Customer</strong>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FAQ -->
+
+  <section id="faq">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Frequently Asked Questions</h2>
+        <p>Quick answers about TECHNOVA service</p>
+      </div>
+
+
+      <div class="faq">
+
+        <details>
+          <summary>How can I book a service?</summary>
+          <p>
+            Fill out the booking form and send the request through WhatsApp.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>Which appliances do you service?</summary>
+          <p>
+            TECHNOVA offers repair/service options for AC, refrigerators,
+            washing machines, microwaves, TVs and other home appliances.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>How do I contact TECHNOVA?</summary>
+          <p>
+            You can call or WhatsApp TECHNOVA directly using the buttons on
+            this website.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>Can I describe my problem before booking?</summary>
+          <p>
+            Yes. Use the problem/requirement box in the booking form to
+            explain the issue.
+          </p>
+        </details>
+
+
+        <details>
+          <summary>How will I receive the service details?</summary>
+          <p>
+            Your request can be discussed directly through WhatsApp or phone.
+          </p>
+        </details>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact TECHNOVA</h2>
+        <p>Need appliance repair? Get in touch.</p>
+      </div>
+
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <div>📞</div>
+          <h3>Call Us</h3>
+          <a href="tel:7082234217">
+            7082234217
+          </a>
+        </div>
+
+
+        <div class="contact-card">
+          <div>💬</div>
+          <h3>WhatsApp</h3>
+          <a
+            href="https://wa.me/917082234217"
+            target="_blank"
+          >
+            Chat on WhatsApp
+          </a>
+        </div>
+
+
+        <div class="contact-card">
+          <div>🛠️</div>
+          <h3>Service</h3>
+          <p>
+            AC & Home Appliance Repair
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+
+        <div class="logo" style="color:white; margin-bottom:12px;">
+          <span class="logo-icon">🔧</span>
+          TECHNOVA
+        </div>
+
+        <p>
+          AC & Home Appliance Repair Service.
+          Easy booking and direct customer support.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>Quick Links</h3>
+
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#booking">Book Service</a>
+        <a href="#faq">FAQ</a>
+
+      </div>
+
+
+      <div>
+
+        <h3>Contact</h3>
+
+        <a href="tel:7082234217">
+          📞 7082234217
+        </a>
+
+        <a href="https://wa.me/917082234217" target="_blank">
+          💬 WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 TECHNOVA. All Rights Reserved.
+    </div>
+
+  </footer>
+
+
+  <!-- FLOATING BUTTONS -->
+
+  <div class="floating">
+
+    <a
+      href="tel:7082234217"
+      class="float-btn call"
+      title="Call TECHNOVA"
+    >
+      📞
+    </a>
+
+    <a
+      href="https://wa.me/917082234217"
+      class="float-btn whatsapp"
+      target="_blank"
+      title="WhatsApp TECHNOVA"
+    >
+      💬
+    </a>
+
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function sendBooking(event) {
 
       event.preventDefault();
 
       const name =
-        document.getElementById("name").value.trim();
+        document.getElementById("name").value;
 
       const phone =
-        document.getElementById("phone").value.trim();
+        document.getElementById("phone").value;
 
       const service =
         document.getElementById("service").value;
 
+      const time =
+        document.getElementById("time").value;
+
       const problem =
-        document.getElementById("problem").value.trim();
+        document.getElementById("problem").value;
 
 
       const message =
-        "Hello TECHNOVA,%0A%0A" +
-
-        "I want to book a repair service.%0A%0A" +
-
-        "Name: " +
-        encodeURIComponent(name) +
-        "%0A" +
-
-        "Phone: " +
-        encodeURIComponent(phone) +
-        "%0A" +
-
-        "Service: " +
-        encodeURIComponent(service) +
-        "%0A" +
-
-        "Problem: " +
-        encodeURIComponent(problem);
+        "Hello TECHNOVA!%0A%0A" +
+        "I want to book a service.%0A%0A" +
+        "Name: " + encodeURIComponent(name) +
+        "%0APhone: " + encodeURIComponent(phone) +
+        "%0AService: " + encodeURIComponent(service) +
+        "%0APreferred Time: " + encodeURIComponent(time) +
+        "%0AProblem: " + encodeURIComponent(problem);
 
 
-      const whatsappURL =
-        "https://wa.me/917082234217?text=" +
-        message;
+      const whatsapp =
+        "https://wa.me/917082234217?text=" + message;
 
 
-      window.open(
-        whatsappURL,
-        "_blank"
-      );
+      window.open(whatsapp, "_blank");
 
-    });
+    }
 
-</script>
+
+    function searchServices() {
+
+      const input =
+        document.getElementById("serviceSearch")
+        .value
+        .toLowerCase();
+
+      const cards =
+        document.querySelectorAll(".service-card");
+
+
+      cards.forEach(function(card) {
+
+        const text =
+          card.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+
+      });
+
+    }
+
+  </script>
 
 
 </body>
