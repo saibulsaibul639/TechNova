@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saibulsaibul639.github.io/TechNova/sitemap.xml
