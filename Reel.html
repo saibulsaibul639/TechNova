@@ -1,1 +1,205 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emotional Reel</title>
 
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:#000;
+  font-family:Arial,sans-serif;
+}
+
+.reel{
+  width:100vw;
+  height:100vh;
+  max-width:430px;
+  margin:auto;
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 50% 35%,#333 0%,#111 35%,#000 75%);
+  color:white;
+}
+
+.glow{
+  position:absolute;
+  width:260px;
+  height:260px;
+  left:50%;
+  top:20%;
+  transform:translateX(-50%);
+  border-radius:50%;
+  background:rgba(255,255,255,.07);
+  filter:blur(45px);
+}
+
+.star{
+  position:absolute;
+  width:3px;
+  height:3px;
+  border-radius:50%;
+  background:white;
+  opacity:.4;
+  animation:blink 2s infinite alternate;
+}
+
+.s1{top:15%;left:15%}
+.s2{top:28%;left:80%}
+.s3{top:50%;left:10%}
+.s4{top:65%;left:88%}
+.s5{top:80%;left:30%}
+.s6{top:12%;left:65%}
+
+@keyframes blink{
+  from{opacity:.1}
+  to{opacity:.7}
+}
+
+.scene{
+  position:absolute;
+  width:90%;
+  left:5%;
+  top:50%;
+  text-align:center;
+  transform:translateY(-50%);
+  opacity:0;
+}
+
+.scene h1{
+  font-size:30px;
+  line-height:1.45;
+  font-weight:600;
+}
+
+.scene p{
+  margin-top:18px;
+  font-size:16px;
+  opacity:.65;
+}
+
+/* Scene 1 */
+.scene1{
+  animation:scene1 15s linear forwards;
+}
+
+@keyframes scene1{
+  0%{opacity:0;transform:translateY(-40%)}
+  5%{opacity:1;transform:translateY(-50%)}
+  27%{opacity:1;transform:translateY(-50%)}
+  33%{opacity:0;transform:translateY(-60%)}
+  100%{opacity:0}
+}
+
+/* Scene 2 */
+.scene2{
+  animation:scene2 15s linear forwards;
+}
+
+@keyframes scene2{
+  0%,32%{opacity:0;transform:translateY(-40%)}
+  38%{opacity:1;transform:translateY(-50%)}
+  60%{opacity:1;transform:translateY(-50%)}
+  67%{opacity:0;transform:translateY(-60%)}
+  100%{opacity:0}
+}
+
+/* Scene 3 */
+.scene3{
+  animation:scene3 15s linear forwards;
+}
+
+@keyframes scene3{
+  0%,65%{opacity:0;transform:translateY(-40%)}
+  72%{opacity:1;transform:translateY(-50%)}
+  94%{opacity:1;transform:translateY(-50%)}
+  100%{opacity:0;transform:translateY(-60%)}
+}
+
+.bottom{
+  position:absolute;
+  bottom:40px;
+  width:100%;
+  text-align:center;
+  font-size:11px;
+  letter-spacing:2px;
+  opacity:.4;
+}
+
+.progress{
+  position:absolute;
+  bottom:18px;
+  left:5%;
+  width:90%;
+  height:2px;
+  background:rgba(255,255,255,.2);
+}
+
+.progress span{
+  display:block;
+  width:0;
+  height:100%;
+  background:white;
+  animation:progress 15s linear forwards;
+}
+
+@keyframes progress{
+  from{width:0}
+  to{width:100%}
+}
+</style>
+</head>
+
+<body>
+
+<div class="reel">
+
+  <div class="glow"></div>
+
+  <div class="star s1"></div>
+  <div class="star s2"></div>
+  <div class="star s3"></div>
+  <div class="star s4"></div>
+  <div class="star s5"></div>
+  <div class="star s6"></div>
+
+  <!-- पहला Scene -->
+  <div class="scene scene1">
+    <h1>कुछ लोग दूर होकर भी…</h1>
+    <p>हमेशा दिल के करीब रहते हैं।</p>
+  </div>
+
+  <!-- दूसरा Scene -->
+  <div class="scene scene2">
+    <h1>वक्त बदल जाता है…</h1>
+    <p>लेकिन कुछ यादें नहीं बदलतीं।</p>
+  </div>
+
+  <!-- तीसरा Scene -->
+  <div class="scene scene3">
+    <h1>बस फर्क इतना है…</h1>
+    <p>अब वो साथ नहीं होते। 🖤</p>
+  </div>
+
+  <div class="bottom">
+    FEELINGS • MEMORIES
+  </div>
+
+  <div class="progress">
+    <span></span>
+  </div>
+
+</div>
+
+</body>
+</html>
